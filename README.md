@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# links.otaviorossoni.com
 
-## Getting Started
+<div align="center">
+  <p>
+    <strong>Página de links pessoal — minimalista e performática.</strong>
+  </p>
 
-First, run the development server:
+  <p>
+    <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?style=flat-square" alt="Version">
+    <img src="https://img.shields.io/badge/Next.js-16.2.9-black.svg?style=flat-square&logo=next.js" alt="Next.js">
+    <img src="https://img.shields.io/badge/React-19-blue.svg?style=flat-square&logo=react" alt="React">
+    <img src="https://img.shields.io/badge/TypeScript-5.x-blue.svg?style=flat-square&logo=typescript" alt="TypeScript">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-4.x-38B2AC.svg?style=flat-square&logo=tailwind-css" alt="Tailwind CSS">
+  </p>
+</div>
+
+---
+
+## 🚀 Sobre
+
+Página de links pessoal de **Otávio Monteiro Rossoni**. Estilo linktree com todos os links importantes em um só lugar.
+
+## ✨ Funcionalidades
+
+- ⚡ **Performance**: Renderização estática com Next.js App Router.
+- 🎨 **UI limpa**: Tailwind CSS v4, fonte Geist.
+- 🔗 **Links organizados**: Website, blog, redes sociais e email.
+- 🖼️ **Foto de perfil**: Imagem local otimizada com Next.js Image.
+
+## 🛠️ Stack
+
+| Categoria       | Tecnologia              |
+| --------------- | ----------------------- |
+| **Framework**   | Next.js 16 (App Router) |
+| **Linguagem**   | TypeScript              |
+| **Estilização** | Tailwind CSS 4          |
+| **Fonte**       | Geist (Google Fonts)    |
+
+## 🚀 Começando
+
+### Pré-requisitos
+
+- Node.js 20.x+
+
+### Instalação
 
 ```bash
+# Clone
+git clone https://github.com/Otarossoni/links.otaviorossoni.com.git
+
+# Entre na pasta
+cd links.otaviorossoni.com
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Comandos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Comando         | Descrição                   |
+| --------------- | --------------------------- |
+| `npm run dev`   | Servidor de desenvolvimento |
+| `npm run build` | Build de produção           |
+| `npm start`     | Servidor de produção        |
+| `npm run lint`  | Verificação de código       |
