@@ -62,9 +62,10 @@ Acesse [http://localhost:3000](http://localhost:3000).
 
 ## 📦 Comandos
 
-| Comando         | Descrição                   |
-| --------------- | --------------------------- |
-| `npm run dev`   | Servidor de desenvolvimento |
-| `npm run build` | Build de produção           |
-| `npm start`     | Servidor de produção        |
-| `npm run lint`  | Verificação de código       |
+| Comando             | Descrição                       |
+| ------------------- | ------------------------------- |
+| `npm run dev`       | Servidor de desenvolvimento     |
+| `npm run build`     | Build de produção               |
+| `npm start`         | Servidor de produção            |
+| `npm run lint`      | Verificação de código           |
+| `npm run typecheck` | Verificação de tipos TypeScript |
