@@ -17,7 +17,7 @@ export default function Home() {
             quality={100}
           />
           <h1 className="mt-4 text-xl font-semibold">Otávio Monteiro Rossoni</h1>
-          <p className="mt-2 text-sm text-neutral-500">
+          <p className="mt-1 text-sm text-neutral-500">
             Backend Software Engineer
           </p>
         </div>
