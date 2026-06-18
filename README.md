@@ -2,7 +2,7 @@
 
 <div align="center">
   <p>
-    <strong>Página de links pessoal — minimalista e performática.</strong>
+    <strong>Personal links page — minimalist and performant.</strong>
   </p>
 
   <p>
@@ -16,56 +16,56 @@
 
 ---
 
-## 🚀 Sobre
+## 🚀 About
 
-Página de links pessoal de **Otávio Monteiro Rossoni**. Estilo linktree com todos os links importantes em um só lugar.
+My personal links page — a linktree-style layout with all my important links in one place.
 
-## ✨ Funcionalidades
+## ✨ Features
 
-- ⚡ **Performance**: Renderização estática com Next.js App Router.
-- 🎨 **UI limpa**: Tailwind CSS v4, fonte Geist.
-- 🔗 **Links organizados**: Website, blog, redes sociais e email.
-- 🖼️ **Foto de perfil**: Imagem local otimizada com Next.js Image.
+- ⚡ **Performance**: Static rendering with Next.js App Router.
+- 🎨 **Clean UI**: Tailwind CSS v4, Geist font.
+- 🔗 **Organized links**: Website, blog, social media, and email.
+- 🖼️ **Profile photo**: Local image optimized with Next.js Image.
 
 ## 🛠️ Stack
 
-| Categoria       | Tecnologia              |
+| Category        | Technology              |
 | --------------- | ----------------------- |
 | **Framework**   | Next.js 16 (App Router) |
-| **Linguagem**   | TypeScript              |
-| **Estilização** | Tailwind CSS 4          |
-| **Fonte**       | Geist (Google Fonts)    |
+| **Language**    | TypeScript              |
+| **Styling**     | Tailwind CSS 4          |
+| **Font**        | Geist (Google Fonts)    |
 
-## 🚀 Começando
+## 🚀 Getting Started
 
-### Pré-requisitos
+### Prerequisites
 
 - Node.js 20.x+
 
-### Instalação
+### Installation
 
 ```bash
 # Clone
 git clone https://github.com/Otarossoni/links.otaviorossoni.com.git
 
-# Entre na pasta
+# Enter the folder
 cd links.otaviorossoni.com
 
-# Instale as dependências
+# Install dependencies
 npm install
 
-# Inicie o servidor de desenvolvimento
+# Start the development server
 npm run dev
 ```
 
-Acesse [http://localhost:3000](http://localhost:3000).
+Access [http://localhost:3000](http://localhost:3000).
 
-## 📦 Comandos
+## 📦 Commands
 
-| Comando             | Descrição                       |
-| ------------------- | ------------------------------- |
-| `npm run dev`       | Servidor de desenvolvimento     |
-| `npm run build`     | Build de produção               |
-| `npm start`         | Servidor de produção            |
-| `npm run lint`      | Verificação de código           |
-| `npm run typecheck` | Verificação de tipos TypeScript |
+| Command           | Description                   |
+| ----------------- | ----------------------------- |
+| `npm run dev`     | Development server            |
+| `npm run build`   | Production build              |
+| `npm start`       | Production server             |
+| `npm run lint`    | Code linting                  |
+| `npm run typecheck` | TypeScript type checking    |
