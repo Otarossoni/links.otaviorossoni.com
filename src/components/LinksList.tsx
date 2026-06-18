@@ -36,7 +36,7 @@ export default function LinksList() {
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center rounded-full border border-neutral-800 px-4 py-3 text-sm font-semibold text-neutral-300 transition-all duration-200 ease-in-out hover:border-[#8A2BE2] hover:text-white"
+          className="flex items-center justify-center rounded-full border border-neutral-800 bg-black px-4 py-3 text-sm font-semibold text-neutral-300 transition-all duration-200 ease-in-out hover:border-[#8A2BE2] hover:text-white"
         >
           {link.title}
         </Link>
