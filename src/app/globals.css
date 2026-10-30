@@ -10,7 +10,7 @@
   --text-tertiary: rgba(235, 235, 245, 0.3);
   --accent: #a970ff;
   --accent-tint: rgba(169, 112, 255, 0.18);
-  --dot: rgba(255, 255, 255, 0.1);
+  --dot: rgba(255, 255, 255, 0.08);
 
   /* Radii */
   --link-radius: 16px;
@@ -36,8 +36,9 @@
   --icon-box: 36px;
   --icon-glyph: 18px;
   --arrow-glyph: 16px;
-  --dot-grid: 24px;
-  --dot-size: 1.2px;
+  --dot-grid: 32px;
+  --dot-size: 1px;
+  --dot-fade: 1.25px;
 
   /* Motion */
   --duration-base: 200ms;
@@ -113,7 +114,7 @@
 }
 
 @utility bg-dot-grid {
-  background-image: radial-gradient(circle, var(--dot) var(--dot-size), transparent var(--dot-size));
+  background-image: radial-gradient(circle, var(--dot) var(--dot-size), transparent var(--dot-fade));
   background-size: var(--dot-grid) var(--dot-grid);
 }
 
