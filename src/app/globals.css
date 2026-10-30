@@ -1,65 +1,127 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
-  --foreground: #ededed;
+  /* Colors */
+  --bg: #000000;
+  --surface: #1c1c1e;
+  --surface-elevated: #2c2c2e;
+  --text: #f5f5f7;
+  --text-secondary: rgba(235, 235, 245, 0.6);
+  --text-tertiary: rgba(235, 235, 245, 0.3);
+  --accent: #a970ff;
+  --accent-tint: rgba(169, 112, 255, 0.18);
+  --dot: rgba(255, 255, 255, 0.1);
+
+  /* Radii */
+  --link-radius: 16px;
+  --icon-radius: 10px;
+
+  /* Sizes and spacing */
+  --column-width: 420px;
+  --page-margin: 16px;
+  --photo-size: 120px;
+  --photo-size-mobile: 112px;
+  --ring-width: 2px;
+  --ring-gap: 3px;
+  --name-gap: 20px;
+  --name-gap-mobile: 18px;
+  --subtitle-gap: 6px;
+  --profile-gap: 40px;
+  --profile-gap-mobile: 36px;
+  --links-gap: 8px;
+  --link-height: 56px;
+  --link-padding-start: 10px;
+  --link-padding-end: 18px;
+  --link-inner-gap: 14px;
+  --icon-box: 36px;
+  --icon-glyph: 18px;
+  --arrow-glyph: 16px;
+  --dot-grid: 24px;
+  --dot-size: 1.2px;
+
+  /* Motion */
+  --duration-base: 200ms;
+  --duration-enter: 400ms;
+  --delay-enter: 100ms;
+  --easing-standard: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --easing-enter: cubic-bezier(0, -0.03, 0.5, 0.99);
+  --scale-pressed: 0.98;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-text: var(--text);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-accent: var(--accent);
+  --color-accent-tint: var(--accent-tint);
 
-html, body {
-  background-color: #000000;
-  color: #ededed;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  --font-sans: var(--font-inter), system-ui, sans-serif;
 
-[data-theme="dark"] {
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1.2px, transparent 1.2px);
-  background-size: 24px 24px;
-}
+  --text-name: 30px;
+  --text-name--line-height: 36px;
+  --text-name--letter-spacing: -0.025em;
+  --text-name-mobile: 28px;
+  --text-name-mobile--line-height: 34px;
+  --text-name-mobile--letter-spacing: -0.025em;
+  --text-body: 15px;
+  --text-body--line-height: 20px;
+  --text-link: 15px;
+  --text-link--line-height: 20px;
+  --text-link--letter-spacing: -0.01em;
 
-@layer components {
-  ::selection {
-    background: #49494949;
-  }
+  --radius-link: var(--link-radius);
+  --radius-icon: var(--icon-radius);
 
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
+  --container-column: var(--column-width);
 
-  html {
-    scrollbar-width: none;
-  }
+  --spacing-page-margin: var(--page-margin);
+  --spacing-photo: var(--photo-size);
+  --spacing-photo-mobile: var(--photo-size-mobile);
+  --spacing-ring-width: var(--ring-width);
+  --spacing-ring-gap: var(--ring-gap);
+  --spacing-name-gap: var(--name-gap);
+  --spacing-name-gap-mobile: var(--name-gap-mobile);
+  --spacing-subtitle-gap: var(--subtitle-gap);
+  --spacing-profile-gap: var(--profile-gap);
+  --spacing-profile-gap-mobile: var(--profile-gap-mobile);
+  --spacing-links-gap: var(--links-gap);
+  --spacing-link: var(--link-height);
+  --spacing-link-start: var(--link-padding-start);
+  --spacing-link-end: var(--link-padding-end);
+  --spacing-link-inner-gap: var(--link-inner-gap);
+  --spacing-icon-box: var(--icon-box);
+  --spacing-icon-glyph: var(--icon-glyph);
+  --spacing-arrow-glyph: var(--arrow-glyph);
 
-  @keyframes smoothFadeInUp {
-    0% {
+  --ease-standard: var(--easing-standard);
+
+  --animate-fade-up: fade-up var(--duration-enter) var(--easing-enter) var(--delay-enter) both;
+
+  @keyframes fade-up {
+    from {
       opacity: 0;
       transform: translateY(10px);
     }
-    100% {
+    to {
       opacity: 1;
-      transform: translateY(0);
+      transform: none;
     }
   }
+}
 
-  .animate-5 {
-    animation: smoothFadeInUp 0.4s cubic-bezier(0, -0.03, 0.5, 0.99) 0.1s both;
-  }
+@utility bg-dot-grid {
+  background-image: radial-gradient(circle, var(--dot) var(--dot-size), transparent var(--dot-size));
+  background-size: var(--dot-grid) var(--dot-grid);
+}
 
-  .animate-7 {
-    animation: smoothFadeInUp 0.4s cubic-bezier(0, -0.03, 0.5, 0.99) 0.3s both;
-  }
-
-  .animate-10 {
-    animation: smoothFadeInUp 0.4s cubic-bezier(0, -0.03, 0.5, 0.99) 0.4s both;
-  }
-
-  .animate-15 {
-    animation: smoothFadeInUp 0.4s cubic-bezier(0, -0.03, 0.5, 0.99) 0.7s both;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation: none !important;
+    transition: none !important;
   }
 }

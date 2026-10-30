@@ -3,35 +3,31 @@ import LinksList from "@/components/LinksList";
 
 export default function Home() {
   return (
-    <div
-      className="flex min-h-screen w-full flex-col items-center justify-center px-4"
-      data-theme="dark"
-    >
-      <div className="w-full max-w-md">
+    <div className="bg-dot-grid flex min-h-dvh w-full flex-col items-center justify-center px-page-margin">
+      <main className="animate-fade-up flex w-full max-w-column flex-col gap-profile-gap-mobile sm:gap-profile-gap">
         {/* Profile Header */}
-        <div className="animate-5 mb-12 flex flex-col items-center">
-          <div className="rounded-full border-[3px] border-[#8A2BE2] p-[3px]">
+        <div className="flex flex-col items-center">
+          <div className="m-ring-width rounded-full bg-bg p-ring-gap ring-(length:--ring-width) ring-accent">
             <Image
               src="/images/profile.jpg"
               alt="Otávio Monteiro Rossoni"
-              width={144}
-              height={144}
-              className="rounded-full"
-              priority
-              quality={100}
+              width={120}
+              height={120}
+              className="block size-photo-mobile rounded-full object-cover sm:size-photo"
+              preload
             />
           </div>
-          <h1 className="mt-4 text-xl font-semibold">Otávio Monteiro Rossoni</h1>
-          <p className="mt-1 text-sm text-neutral-500">
+          <h1 className="mt-name-gap-mobile text-center text-name-mobile font-bold text-text sm:mt-name-gap sm:text-name">
+            Otávio Monteiro Rossoni
+          </h1>
+          <p className="mt-subtitle-gap text-center text-body text-text-secondary">
             Backend Software Engineer
           </p>
         </div>
 
         {/* Links */}
-        <div className="animate-7">
-          <LinksList />
-        </div>
-      </div>
+        <LinksList />
+      </main>
     </div>
   );
 }
